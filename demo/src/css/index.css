@@ -1,0 +1,29 @@
+.inner {
+    width: 550px;
+    height: 30px;
+    background-color: rgb(43, 144, 226);
+    margin: 10px;
+    display: flex;
+}
+.father_inner{
+    display: flex;
+    flex-direction: column;
+}
+.child_inner{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    margin: 5px;
+}
+.inner .child_inner:nth-child(3){
+    background-color: chartreuse;
+}
+.input {
+    width: 425px;
+    height: 35px;
+}
+.queren{
+    width: 125px;
+    height: 40px;
+    background-color: rgb(100, 194, 237);
+}

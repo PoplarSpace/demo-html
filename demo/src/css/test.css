@@ -1,0 +1,163 @@
+.box1{
+   
+    background-color: burlywood;/* 背景颜色 */
+    
+    color: cornflowerblue;/* 字体颜色 */
+
+    border: 5px blue solid;/* 边框 */
+    
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.box1 h1{
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;/*下划线 */
+    text-transform: uppercase;/* 大小写 */
+    letter-spacing: 1em; /* 字间距 */
+    word-spacing: 2em;/*词间距  */
+  
+}
+
+.box2{
+    margin:5px 10px;
+    border:5px rgb(100, 143, 237) solid;
+    border-radius: 5px;/* 边角圆弧半径 */
+    padding:0px 10px;
+    position: relative;/* 相對定位，相对于她的原始位置偏移 */
+    
+    top: 30px;
+    left:30px;/* 相对于原位置向下移动30px 向右移动30px */
+    
+
+}
+.container{
+    
+    width: 80%;/* 宽占百分比 */
+    
+    margin: auto;/* 居中 */
+    text-align: center;/* 居中 */
+}
+
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;/* 字体类型 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: bold; /* 加粗 */
+    /* font_weight: nomal;正常 */
+    /* 下面的部分会将上面覆盖（重复的部分） */
+    font:normal 16px Arial, Helvetica, sans-serif;
+    line-height: 1.5em;/* 行高 */
+}
+
+P{
+    margin: 5px 10px 5px 10px ;
+    /* //规定上，右，下，左边距； */
+    margin: 5px 10px;
+    /* //规定上下，左右边距； */
+    margin: 5px 10px 5px;
+    /* //规定上，左右，下边距； */
+    border-radius: 10px;
+    /* 规定圆角 radius：半径*/
+}
+
+.list{
+    list-style-image: url();/* 修改列表前方的图片样式 */
+    list-style: square;/* 修改图片形状 */
+}
+
+button {
+    background-color: rgb(100, 143, 237);
+    color: lightgray;
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline-style: none;
+    /* input边框样式 */
+    border: 0px;
+    /* 边框宽度 */
+}
+
+button:hover{
+    background-color: indigo;
+    transition: all 1s;/* 当变化发生的时候的动画效果 */
+}/* 当鼠标移上去时按钮发生的变化 */
+
+button:active{
+    background-color:rgb(216, 112, 147);
+}
+/* 当鼠标按下的时候变化 */
+
+a{
+    text-decoration: none;
+    /* 去掉下划线 */
+}
+a:visited{
+/* 规定访问过的网页的状态 */
+
+}
+
+.block{
+    float:left;/* 使段落可以不再拘泥于行的概念，可以成为三段并行的模式 */
+    width: 33.3%;/* 每一段占据行宽是整个路蓝旗宽度的33.3% */
+    border: 1px solid #ccc; /* 添加实线边框 */
+    box-sizing:border-box;/*避免添加边框导致的文段占据规格的bug */
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float:right;/* 向右靠齐 */
+    width: 30%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.list2 li:nth-child(even)/* 偶数even 奇数odd */{
+    background-color: grey;
+}/* 对偶数序号列表进行改动 */
+
+.list2 li:first-child{
+   background-color: red;
+}/* 对第一个列表进行改动 */
+
+.list2 li:nth-child(3){
+    background-color: rgb(100, 143, 237);
+}
+/* 该方式适用于众多列表中选择操作 */
+
+.position-box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #555555;
+    position: relative;
+}
+
+.position-box h1{
+    position: absolute;
+    /* 相对于父级元素，在这里是指position-box进行偏移 */
+    top:50px;
+}
+
+.position-box h2{
+    position: absolute;
+}/* 原始位置只相对于父级元素，意思是，同一父级元素，绝对位置是一样的 */
+/* 但是在这里，如果父及元素没有position:relative(相对位置)的话，默认为整个页面为父及元素 */
+
+#fixed{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+/* 固定一个按钮一直在页面右下角，不随页面滑动而改变 类似于广告小弹窗*/

@@ -1,0 +1,231 @@
+<!-- HTML教程 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Headings -->
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+    <h6>hello world</h6>
+    <!-- paregargh -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. <strong>incidunt,</strong> rem expedita sint fuga
+        harum quia <em>illum cumque, aspernatur</em>
+        molestiae temporibus quaerat quasi nostrum
+        voluptates
+        <a href="https://google.com" target="_black">
+            <!-- 超链接 -->
+            Temporibus3
+        </a>
+        obcaecati delectus placeat voluptas.
+    </p>
+    <!-- list -->
+    <ul>
+        <li>list Item 1</li>
+        <li>list Item 2</li>
+        <li>list Item 3</li>
+        <li>list Item 4</li>
+    </ul>
+    <ol>
+        <li>list Item 1</li>
+        <li>list Item 2</li>
+        <li>list Item 3</li>
+        <li>list Item 4</li>
+        <li>list Item 5</li>
+    </ol>
+
+    <!-- table -->
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Leonard</td>
+                <td>Chan</td>
+                <td>99</td>
+                <td>abc@abc.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Forms -->
+    <form action="form.js" method="POST">
+        <div>
+            <label>First Name</label>
+            <input type="text" name="firstname" placeholder="Enter First Name">
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lastname" placeholder="Enter Last Name">
+        </div>
+        <div>
+            <label>Eamil</label>
+            <!-- 输入 -->
+            <input type="text" name="eamil" placeholder="Enter Eamil">
+        </div>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    <!-- 按钮 -->
+    <br>
+    <button>This is a Button</button>
+
+    <!-- 放置图片 -->
+    <img style="width: 100vw;" src="img/pic.jpg" alt="This is a img tag">
+
+    <!-- Quotation -->
+    <blockquote>Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Doloremque aperiam iste laboriosam
+        commodi odit dolor in provident necessitatibus quibusdam
+        incidunt distinctio assumenda ea nostrum explicabo,
+        repellat non? Deserunt, dolorem nulla?</blockquote>
+
+    <!-- 注释 -->
+    <p><abbr title="Massachusetts Institute of Technology">MIT</abbr> is a pretigious collage</p>
+    <p><cite>MIT is a pretigious collage</cite>by yys</p>
+    <div style="margin-top:1000px"></div>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- css教程 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 找css -->
+    <link rel="stylesheet" href="./src/css/test.css">
+    <title>CSS Crash Course</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>Hello world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rem nostrum nihil corrupti accusamus provident perspiciatis,
+                excepturi fugit debitis nobis? Aperiam asperiores ab sunt
+                itaque harum dolor dolorem nobis totam obcaecati!
+            </p>
+            <button>
+                <a href="https://baidu.com">
+                    百度一下
+                </a>
+            </button>
+        </div>
+        <div class="box2">
+            <h1>Hello world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rem nostrum nihil corrupti accusamus provident perspiciatis,
+                excepturi fugit debitis nobis? Aperiam asperiores ab sunt
+                itaque harum dolor dolorem nobis totam obcaecati!
+            </p>
+            <button>
+                <a href="https://baidu.com">
+                    百度一下
+                </a>
+            </button>
+        </div>
+    </div>
+    <ul id="list">
+        <li>list Item 1</li>
+        <li>list Item 2</li>
+        <li>list Item 3</li>
+        <li>list Item 4</li>
+    </ul>
+    <div class="block">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Rerum voluptatum earum, possimus nisi eum,
+            aperiam accusantium beatae autem, aliquam deserunt
+            commodi numquam velit voluptate. Ipsam beatae error
+            exercitationem reprehenderit quaerat!
+        </p>
+    </div>
+    <div class="block">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Rerum voluptatum earum, possimus nisi eum,
+            aperiam accusantium beatae autem, aliquam deserunt
+            commodi numquam velit voluptate. Ipsam beatae error
+            exercitationem reprehenderit quaerat!
+        </p>
+    </div>
+    <div class="block">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Rerum voluptatum earum, possimus nisi eum,
+            aperiam accusantium beatae autem, aliquam deserunt
+            commodi numquam velit voluptate. Ipsam beatae error
+            exercitationem reprehenderit quaerat!
+        </p>
+    </div>
+    <div class="clearfix"></div>
+     <!-- 浮动一定要清除，为了防止浮动造成的后面内容间距的变动 -->
+     <!-- 相当于浮动分割线 -->
+    <div id="main-block">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Rerum voluptatum earum, possimus nisi eum,
+            aperiam accusantium beatae autem, aliquam deserunt
+            commodi numquam velit voluptate. Ipsam beatae error
+            exercitationem reprehenderit quaerat!
+        </p>
+    </div>
+    <div id="sidebar">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing 
+            elit. Aliquid cupiditate optio earum, praesentium
+             autem obcaecati, provident corporis unde aliquam 
+             iure illum, velit accusamus ducimus eligendi nobis 
+             eius nostrum ratione maiores?
+        </p>
+    </div>
+    <div class="clearfix"></div>
+    <!-- 每一行都要进行一次清空 -->
+
+    <ul class="list2">
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ul>
+
+    <div class="position-box">
+        <h1>heading1</h1>
+        <h2>heading2</h2>
+    </div><!-- 生成一个框架 -->
+    <button id="fixed">Button</button>
+    <div style="margin-top: 1000px;"></div>
+</body>
+
+</html>
